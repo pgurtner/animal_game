@@ -1,5 +1,3 @@
-pub mod animal_game_engine_graphics;
-
 pub trait GraphicContext {}
 
 #[cfg(test)]

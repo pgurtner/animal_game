@@ -1,4 +1,4 @@
-use crate::keyboard_context::KeyboardContext;
+use animal_game::interfaces::engine::keyboard_context::KeyboardContext;
 
 pub struct AnimalGameEngineKeyboardContext {}
 

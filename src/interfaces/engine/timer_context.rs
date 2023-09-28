@@ -1,5 +1,3 @@
-pub mod animal_game_engine_timer;
-
 pub trait TimerContext {}
 
 #[cfg(test)]

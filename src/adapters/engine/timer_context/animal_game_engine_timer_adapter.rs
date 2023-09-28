@@ -1,4 +1,4 @@
-use crate::timer_context::TimerContext;
+use animal_game::interfaces::engine::timer_context::TimerContext;
 
 pub struct AnimalGameEngineTimerContext {}
 
@@ -13,7 +13,6 @@ impl TimerContext for AnimalGameEngineTimerContext {}
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::timer_context::TimerContext;
 
     #[test]
     fn create_std_timer_context() {
