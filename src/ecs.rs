@@ -1,6 +1,6 @@
 mod bevy_ecs_adapter;
 
-pub use bevy_ecs_adapter::{ECSWorld, ECSSchedule, Entity, component, system};
+pub use bevy_ecs_adapter::{ECSWorld, ECSSchedule, ECSEntity, component, system};
 
 #[cfg(test)]
 mod tests {
@@ -17,7 +17,7 @@ mod tests {
     struct Velocity {x: u64, y: u64}
 
     #[system]
-    fn movement (pos: &mut Position, v: &Velocity, entity: Entity) {
+    fn movement (pos: &mut Position, v: &Velocity, entity: ECSEntity) {
         let _ = entity;
         pos.x += v.x;
         pos.y += v.y;

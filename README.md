@@ -21,9 +21,8 @@ Every part should be able to bear future changes and extensions to allow program
 The lists in the subsections are **not** exhaustive.
 
 ### general interfaces
-* ECS
-* abstraction of game engine
-  * todo: 
+* Entities
+* adapter layers
 
 ### animal senses
 Generally perceiving the environment.

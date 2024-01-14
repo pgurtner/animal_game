@@ -6,7 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-animal_game_engine = { path="../animal_game_engine" }
 bevy_ecs = "0.11.2"
 animal_game_ecs_macros = { path="../animal_game_ecs_macros"}
 rand = "0.8.5"

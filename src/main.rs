@@ -1,3 +1,1 @@
-mod adapters;
-
 fn main() {}

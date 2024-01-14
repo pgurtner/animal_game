@@ -1,1 +1,0 @@
-pub mod animal_game_engine_timer_adapter;

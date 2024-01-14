@@ -1,7 +1,7 @@
 use bevy_ecs::bundle::Bundle;
 use bevy_ecs::world::{EntityMut, EntityRef};
 
-pub use bevy_ecs::entity::Entity;
+pub use bevy_ecs::entity::Entity as ECSEntity;
 use bevy_ecs::prelude::IntoSystemConfigs;
 
 pub struct ECSWorld {
@@ -19,15 +19,15 @@ impl ECSWorld {
         self.world.spawn(bundle)
     }
 
-    pub fn get_entity (&self, entity: Entity) -> Option<EntityRef> {
+    pub fn get_entity (&self, entity: ECSEntity) -> Option<EntityRef> {
         self.world.get_entity(entity)
     }
 
-    pub fn get_entity_mut (&mut self, entity: Entity) -> Option<EntityMut> {
+    pub fn get_entity_mut (&mut self, entity: ECSEntity) -> Option<EntityMut> {
         self.world.get_entity_mut(entity)
     }
 
-    pub fn remove_entity (&mut self, entity: Entity) -> bool {
+    pub fn remove_entity (&mut self, entity: ECSEntity) -> bool {
         self.world.despawn(entity)
     }
 }
